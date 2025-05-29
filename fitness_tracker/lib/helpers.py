@@ -1,7 +1,7 @@
-from fitness_tracker.lib.models import session
-from lib.models.user import User
-from lib.models.workout import Workout
-from lib.models.exercise import Exercise
+from fitness_tracker.lib.models.user import User
+from fitness_tracker.lib.models.workout import Workout
+from fitness_tracker.lib.models.exercise import Exercise
+
 
 def create_user():
     name = input("Enter the user's name: ")
