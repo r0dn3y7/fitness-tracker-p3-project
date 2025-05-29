@@ -1,5 +1,5 @@
 from fitness_tracker.lib.models import Base, engine
-from fitness_tracker.lib.models import user, workout, exercise  # ensure models are imported
+from fitness_tracker.lib.models import user, workout, exercise  
 
 print("Resetting DB...")
 Base.metadata.drop_all(engine)
