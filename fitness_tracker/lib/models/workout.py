@@ -1,6 +1,7 @@
-from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy import Column, Integer, ForeignKey
 from sqlalchemy.orm import relationship
-from fitness_tracker.lib.models import Base
+from . import Base
+
 class Workout(Base):
     __tablename__ = "workouts"
 
@@ -8,7 +9,7 @@ class Workout(Base):
     user_id = Column(Integer, ForeignKey("users.id"))
 
     user = relationship("User", back_populates="workouts")
-    exercises = relationship("Exercise", back_populates="workout")  # 💡 Add this
+    exercises = relationship("Exercise", back_populates="workout")
 
     def __repr__(self):
         return f"<Workout(id={self.id}, user_id={self.user_id})>"
