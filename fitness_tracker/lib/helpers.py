@@ -1,6 +1,4 @@
-# lib/helpers.py
-
-from lib.models import session
+from fitness_tracker.lib.models import session
 from lib.models.user import User
 from lib.models.workout import Workout
 from lib.models.exercise import Exercise
