@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, ForeignKey
 from sqlalchemy.orm import relationship
-from . import Base
+from fitness_tracker.lib.models import Base
 
 class Workout(Base):
     __tablename__ = "workouts"
