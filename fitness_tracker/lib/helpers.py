@@ -1,6 +1,7 @@
 from fitness_tracker.lib.models.user import User
 from fitness_tracker.lib.models.workout import Workout
 from fitness_tracker.lib.models.exercise import Exercise
+from fitness_tracker.lib.models import session  
 
 
 def create_user():
