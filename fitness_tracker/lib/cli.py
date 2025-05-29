@@ -1,6 +1,5 @@
 from fitness_tracker.lib.helpers import create_user, list_users, delete_user
 
-
 def main():
     while True:
         print("\n==== Fitness Tracker Menu ====")
