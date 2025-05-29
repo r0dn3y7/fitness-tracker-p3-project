@@ -1,6 +1,5 @@
-# lib/cli.py
+from fitness_tracker.lib.helpers import create_user, list_users, delete_user
 
-from lib.helpers import create_user, list_users, delete_user
 
 def main():
     while True:
